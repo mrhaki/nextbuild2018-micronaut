@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    ports:
+    - 27017:27017
+  consul:
+    image: consul
+    ports:
+    - 8500:8500
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+    - 9411:9411 
+    
